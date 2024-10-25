@@ -29,6 +29,4 @@ This portfolio is designed to highlight my work as a web developer. It includes 
 
 To view this project locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone  https://github.com/Tumisang9x/Website-Portfolio.git
+live link : https://tumisang9x.github.io/MYPORTFOLIOCAPACITI/
