@@ -29,4 +29,4 @@ This portfolio is designed to highlight my work as a web developer. It includes 
 
 To view this project locally, follow these steps:
 
-live link : https://tumisang9x.github.io/MYPORTFOLIOCAPACITI/
+live link : https://tumisang9x.github.io/TMatonaPortfolio/
