@@ -6,6 +6,56 @@
     <link rel="stylesheet" href="StyleSheet.CSS">
     <title>My Personal Portfolio</title>
     
+    <style>
+        body {
+            background-color: #dcdcdc;
+            font-family: Arial, sans-serif; /* Added font for better readability */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        nav {
+            background: #333; /* Navigation background color */
+            color: white;
+            padding: 10px; /* Padding for the nav */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Align links to the right */
+            padding: 0;
+        }
+
+        nav li {
+            margin-left: 20px; /* Space between nav items */
+        }
+
+        nav a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        header {
+            flex: 1; /* Make header take up available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            padding: 20px;
+            text-align: center; /* Center text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+    </style>
 </head>
 
 <body>
@@ -13,8 +63,8 @@
     <!-- Navigation Section -->
     <nav>
         <ul>
-            <li><a href="Pages/about.html">About</a></li>
-            <li><a href="Pages/contact.html">Contacts</a></li>	
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contacts</a></li>	
         </ul>
     </nav>
 
@@ -33,16 +83,26 @@
         </p>
         <p class="intro">Software Developer | Candidate | Tech Enthusiast</p>
 
-        <button id="toggleChat" class="chat-button">💬 Chat</button>
+       
+     
 
-        <!-- Chatbot Container -->
-        <div id="chatbot" class="chatbot">
-            <div id="messages" class="messages"></div>
-            <div class="input-container">
-                <input type="text" id="userInput" placeholder="Type a message...">
-                <button id="send">Send</button>
-            </div>
-        </div>
+<!-- Chatbot Container -->
+<button id="toggleChat" class="chat-button">💬</button>
+
+<!-- Chatbot Container -->
+<div class="chatbot" id="chatbot">
+    <div class="title">
+        Let's chat
+        <span class="exit-icon" id="exitChat">✖</span> <!-- Exit Icon -->
+    </div>
+    <div class="messages" id="chat"></div>
+    <div class="input-container">
+        <input type="text" class="input" id="input" placeholder="Type your message here..." />
+        <button class="button" id="send">Send</button>
+    </div>
+</div>
+
+
     </header>
 
     <!-- Footer Section -->
@@ -50,6 +110,7 @@
         <p>Copyright © 2024 Tumisang Matona. All Rights Reserved</p>
     </footer>
 
-    <script src="chatbot.js"></script>
+    <script src="script.js" ></script>
+
 </body>
 </html>
