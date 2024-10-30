@@ -88,6 +88,7 @@ p {
 .profile-photo {
   width: 100%; /* Make image responsive */
   height: auto;
+  border-radius: 5%;
 }
 
 /* Chatbot Button */
@@ -165,9 +166,9 @@ p {
 
       /* User Message Style */
       .user {
-          color: green; /* User text color */
-          background-color: #e0ffe0; /* Light green background */
-          border: 1px solid green; /* Green border */
+          color: rgb(250, 249, 249); /* User text color */
+          background-color: #aeb0b1; /* Light green background */
+          border: 1px solid rgb(5, 5, 5); /* Green border */
           border-radius: 5px; /* Rounded corners */
           padding: 5px;
           margin: 5px 0; /* Margin for spacing */
@@ -176,9 +177,9 @@ p {
 
       /* Bot Message Style */
       .bot {
-          color: yellow; /* Bot text color */
-          background-color: #fff8e1; /* Light yellow background */
-          border: 1px solid yellow; /* Yellow border */
+          color: rgb(252, 252, 250); /* Bot text color */
+          background-color: #333; /* Light yellow background */
+          border: 1px solid rgba(8, 8, 8); /* Yellow border */
           border-radius: 5px; /* Rounded corners */
           padding: 5px;
           margin: 5px 0; /* Margin for spacing */
@@ -253,22 +254,6 @@ p {
   background-color: #0056b3; /* Darker button color on hover */
 }
 
-/* .socials{
-  margin-top: 30px;
-}
-.socials a{
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-
-.socials a:hover{
-  color: #66BB6A;
-  transform: translate(-5px);
-} */
  body {
   font-family: Arial, sans-serif;
 }
