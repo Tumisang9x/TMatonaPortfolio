@@ -227,14 +227,14 @@ p {
   padding: 20px;
   background-color: #f9f9f9; /* Light background for contrast */
   border-radius: 8px;
-  margin: 20px auto; /* Center the section */
+  margin: 50px auto; /* Center the section */
   max-width: 600px; /* Limit width for better readability */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Form Styles */
 .form-input {
-  width: 100%; /* Full width */
+  width: 90%; /* Full width */
   padding: 10px;
   border: 1px solid #ccc; /* Border styling */
   border-radius: 4px; /* Rounded corners */
