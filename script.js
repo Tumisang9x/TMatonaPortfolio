@@ -20,7 +20,7 @@ function chatbot(input) {
         output = `I'm not sure, but you can check your device's clock!`;
     } else if (input.includes("favorite color")) {
         output = "I don't have a favorite color, but I think all colors are beautiful!";
-    } else if (input.includes("where do you live")) {
+    } else if (input.includes("where are you from")) {
         output = "I exist in the digital world, so I don't have a physical location.";
     } else if (input.includes("help me")) {
         output = "Sure! What do you need help with?";
