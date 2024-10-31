@@ -9,52 +9,54 @@
     <style>
         body {
             background-color: #dcdcdc;
-            font-family: Arial, sans-serif; /* Added font for better readability */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            height: 100vh; /* Full height of the viewport */
+            height: 100vh;
         }
 
         nav {
-            background: #333; /* Navigation background color */
+            background: #333;
             color: white;
-            padding: 10px; /* Padding for the nav */
+            padding: 10px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center; /* Align links to the right */
+            justify-content: center;
             padding: 0;
         }
 
         nav li {
-            margin-left: 20px; /* Space between nav items */
+            margin-left: 20px;
         }
 
         nav a {
-            color: white; /* White text for links */
-            text-decoration: none; /* Remove underline */
+            color: white;
+            text-decoration: none;
         }
 
         header {
-            flex: 1; /* Make header take up available space */
+            flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
-            padding: 20px;
-            text-align: center; /* Center text */
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px; /* Equal padding on left and right */
+            text-align: center;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px 40px; /* Equal padding on left and right */
         }
 
-        
+        .chat-button {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -72,37 +74,29 @@
     <header>
         <h1>Tumisang Nephtaly Matona</h1>
         <p>
-            Hello and welcome to my <strong>personal portfolio</strong> webpage.<br>
-            I am a passionate software developer focused on creating engaging and user-friendly digital experiences.<br>
-            I strive to combine aesthetics with functionality to deliver applications that look great and perform seamlessly.
+            Welcome to my <strong>personal portfolio!</strong> I am a passionate Information Technology graduate and software developer, driven by curiosity and a commitment to excellence. My journey began with a fascination for how things work, and I thrive on exploring the latest advancements while honing my skills through continuous learning.
         </p>
         <p>
-            In this portfolio, you’ll find examples of my experiences that highlight my commitment to excellence in IT.<br>
-            I’m excited about the possibility of connecting and exploring new opportunities in the tech industry!<br>
-            Thank you for visiting!
+            I have a solid foundation in programming languages such as C#, .NET, Java, and SQL, complemented by experience in web development using HTML, CSS, and JavaScript. My background includes providing technical support and troubleshooting in customer service environments, where I developed strong problem-solving abilities and attention to detail.
+        </p>
+        <p>
+            Throughout my career, I've demonstrated a customer-oriented approach, ensuring that user needs are met with exceptional service. As an IT intern at CTE Engineering, I gained hands-on experience in network systems installation, hardware maintenance, and desktop support. I’m excited about connecting and exploring new opportunities in the tech industry. Thank you for visiting!
         </p>
         <p class="intro">Software Developer | Candidate | Tech Enthusiast</p>
-
-       
-     
-
-<!-- Chatbot Container -->
-<button id="toggleChat" class="chat-button">💬</button>
-
-<!-- Chatbot Container -->
-<div class="chatbot" id="chatbot">
-    <div class="title">
-        Let's chat
-        <span class="exit-icon" id="exitChat">✖</span> <!-- Exit Icon -->
-    </div>
-    <div class="messages" id="chat"></div>
-    <div class="input-container">
-        <input type="text" class="input" id="input" placeholder="Type your message here..." />
-        <button class="button" id="send">Send</button>
-    </div>
-</div>
-
-
+ 
+        <!-- Chatbot Container -->
+        <button id="toggleChat" class="chat-button">💬 Let's Chat!</button>
+        <div class="chatbot" id="chatbot">
+            <div class="title">
+                Let's chat
+                <span class="exit-icon" id="exitChat">✖</span>
+            </div>
+            <div class="messages" id="chat"></div>
+            <div class="input-container">
+                <input type="text" class="input" id="input" placeholder="Type your message here..." />
+                <button class="button" id="send">Send</button>
+            </div>
+        </div>
     </header>
 
     <!-- Footer Section -->
@@ -110,7 +104,7 @@
         <p>Copyright © 2024 Tumisang Matona. All Rights Reserved</p>
     </footer>
 
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
