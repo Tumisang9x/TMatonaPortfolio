@@ -3,7 +3,7 @@ function chatbot(input) {
     input = input.toLowerCase();
     
     if (input.includes("hello") || input.includes("hi")) {
-        output = "Hello, nice to meet you!";
+        output = "Hello, nice to meet you! what can i help you with?";
     } else if (input.includes("how are you")) {
         output = "I'm doing fine, thank you for asking.";
     } else if (input.includes("what is your name")) {
@@ -48,7 +48,9 @@ function chatbot(input) {
         output = "Believe in yourself and keep pushing forward! Every step counts.";
     } else if(input.includes("information about you")) {
         output = "Please go to the top of the page to navigate to the about page for more information";
-    } 
+    } else if(input.includes("skills")){
+        output = "Tumisang is skilled in a variety of areas, for specific technical skills, please download the CV in the about page for your persual"
+    }
         else {
             output = "Sorry, I don't understand that. Please try something else.";
         }
