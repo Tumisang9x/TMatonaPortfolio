@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleSheet.CSS">
+    <!-- This is the title of the about page -->
     <title>About Page</title>
     <style>
         
@@ -59,14 +60,33 @@
 
     <div class="grid-container">
         <section>
+            
             <img src="ProfilePhoto.jpg" alt="Profile Photo" class="profile-photo">
         </section>
+
 
         <section>
             <p>Hello there, I am a young and passionate Information Technology professional, striving for greatness and full potential in the industry. My journey in technology began with curiosity about how things work, and I enjoy exploring the latest advancements in technology.</p>
             <p>I have a National Diploma in Information Technology, majoring in Software Development.</p>
             <p>Outside of work, I keep myself busy by staying fit and active, playing rugby, and occasional jogging. I take responsibility for my own professional development and have a positive attitude towards change.</p>
+            <br>
+            <h2>Experiences</h2>
+            <ul>Providing Technical Support</ul> 
+               <ul> Customer Services </ul>
+               <ul>Technical and Desktop customer service experience</ul>
+                <ul> Installation of Network Systems </ul>
+              <ul>  Hardware and Software maintenance</ul> 
+               <ul> Problem solving </ul>
+                <ul>Equipment repairs </ul>
+                <ul>IT User Support </ul>
+                <ul>Maintain Desktop systems </ul>
+                <ul>Router Configuration </ul>
+                <ul>Troubleshooting</ul> 
+                </p>
+        
         </section>
+
+        
     </div>
 
     <main>
@@ -83,10 +103,27 @@
             </a>
         </div>
     </main>
+<!-- Chatbot Container -->
+<button id="toggleChat" class="chat-button">💬 Let's Chat!</button>
+<div class="chatbot" id="chatbot">
+    <div class="title">
+        Let's chat
+        <span class="exit-icon" id="exitChat">✖</span>
+    </div>
+    <div class="messages" id="chat"></div>
+    <div class="input-container">
+        <input type="text" class="input" id="input" placeholder="Type your message here..." />
+        <button class="button" id="send">Send</button>
+    </div>
+</div>
+</header>
 
-    <footer>
-        <p>Copyright © 2024 Tumisang Matona. All Rights Reserved</p>
-    </footer>
+<!-- Footer Section -->
+<footer>
+<p>Copyright © 2024 Tumisang Matona. All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
