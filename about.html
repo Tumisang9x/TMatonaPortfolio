@@ -3,41 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="StyleSheet.CSS">
     <title>About Page</title>
     <style>
+        body {
+            background-color: #dcdcdc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 20px; /* Space between columns */
-            margin: 20px; /* Space around the grid */
+            gap: 20px;
+            margin: 20px;
         }
 
         .profile-photo {
-            width: 100%; /* Make image responsive */
+            width: 100%;
             height: auto;
+            border-radius: 10px; /* Rounded corners for the photo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
         }
 
         section {
-            margin-bottom: 40px; /* Space below each section */
+            margin-bottom: 40px;
         }
 
         h1, h2 {
-            text-align: center; /* Centered headings */
+            text-align: center;
+            color: #333; /* Darker color for better contrast */
+        }
+
+        .about-text {
+            padding: 20px; /* Padding around the text */
+            background: #fff; /* White background for better readability */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+
+        .experience-list, .skills-list {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove default padding */
+        }
+
+        .experience-list li, .skills-list li {
+            background: #f9f9f9; /* Light background for list items */
+            margin: 5px 0; /* Space between items */
+            padding: 10px; /* Padding inside list items */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow */
         }
 
         .btn-icon {
-            text-align: center; /* Center the button */
-            margin: 20px 0; /* Space around the button */
+            text-align: center;
+            margin: 20px 0;
         }
 
         footer {
-            text-align: center; /* Centered footer text */
-            margin: 20px 0; /* Space above and below footer */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .skills-section {
+            padding: 20px; /* Padding for the skills section */
+            background: #fff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
         }
     </style>
 </head>
-
 <body>
 
     <nav>
@@ -51,34 +87,75 @@
 
     <div class="grid-container">
         <section>
-            <img src="ProfilePhoto.jpg" alt="Profile Photo" class="profile-photo">
+            <img src="graduation.jpg" alt="Profile Photo" class="profile-photo">
         </section>
 
         <section>
-            <p>Hello there, I am a young and passionate Information Technology professional, striving for greatness and full potential in the industry. My journey in technology began with curiosity about how things work, and I enjoy exploring the latest advancements in technology.</p>
-            <p>I have a National Diploma in Information Technology, majoring in Software Development.</p>
-            <p>Outside of work, I keep myself busy by staying fit and active, playing rugby, and occasional jogging. I take responsibility for my own professional development and have a positive attitude towards change.</p>
+            <div class="about-text">
+                <p>Hello there! I am a young and passionate Information Technology professional, striving for greatness and full potential in the industry. My journey in technology began with curiosity about how things work, and I enjoy exploring the latest advancements in technology.</p>
+                <p>I have a National Diploma in Information Technology, majoring in Software Development.</p>
+                <p>Outside of work, I keep myself busy by staying fit and active, playing rugby, and jogging. I take responsibility for my own professional development and maintain a positive attitude towards change.</p>
+            </div>
+
+            <h2>Experiences</h2>
+            <ul class="experience-list">
+                <li>Providing Technical Support</li> 
+                <li>Customer Services</li>
+                <li>Technical and Desktop Customer Service Experience</li>
+                <li>Installation of Network Systems</li>
+                <li>Hardware and Software Maintenance</li>
+                <li>Problem Solving</li>
+                <li>Equipment Repairs</li>
+                <li>IT User Support</li>
+                <li>Maintain Desktop Systems</li>
+                <li>Router Configuration</li>
+                <li>Troubleshooting</li>
+            </ul>
         </section>
     </div>
 
     <main>
-        <section id="skills">
+        <section id="skills" class="skills-section">
             <h2>Skills</h2>
             <p>Through my constant learning journey, I have acquired the skill of upholding a good work ethic, coupled with the ability to work proactively in a team to achieve our agreed-upon goals.</p>
+            <ul class="skills-list">
+                <li>Team Collaboration</li>
+                <li>Technical Problem Solving</li>
+                <li>Adaptability to Change</li>
+                <li>Customer Support Expertise</li>
+                <li>Network Troubleshooting</li>
+                <li>Software Development</li>
+                <li>Time Management</li>
+            </ul>
             <p>For more detailed information, please download my CV below.</p>
         </section>
 
         <div class="btn-icon">
-            <a href="CV Tumisang Matona24.doc.pdf.docx" download="CV_Tumisang_Matona24.doc.pdf.docx">
+            <a href="CV_Tumisang_Matona24.docx" download="CV_Tumisang_Matona24.docx">
                 <span class="btn-text">Download CV</span>
                 <span class="btn-icon"><i class="fa fa-download"></i></span>
             </a>
         </div>
     </main>
 
+    <button id="toggleChat" class="chat-button">💬 Let's Chat!</button>
+    <div class="chatbot" id="chatbot">
+        <div class="title">
+            Let's chat
+            <span class="exit-icon" id="exitChat">✖</span>
+        </div>
+        <div class="messages" id="chat"></div>
+        <div class="input-container">
+            <input type="text" class="input" id="input" placeholder="Type your message here..." />
+            <button class="button" id="send">Send</button>
+        </div>
+    </div>
+
     <footer>
         <p>Copyright © 2024 Tumisang Matona. All Rights Reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
