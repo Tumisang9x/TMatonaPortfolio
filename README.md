@@ -22,6 +22,7 @@ This portfolio is designed to highlight my work as a web developer. It includes 
 
 - HTML
 - CSS
+- javascript
 - Visual studio code
 
 
